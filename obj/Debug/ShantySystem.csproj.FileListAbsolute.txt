@@ -1,0 +1,10 @@
+C:\Users\diego\source\repos\ShantySystem\obj\Debug\ShantySystem.csprojAssemblyReference.cache
+C:\Users\diego\source\repos\ShantySystem\obj\Debug\ShantySystem.Pagina_Inicial.resources
+C:\Users\diego\source\repos\ShantySystem\obj\Debug\ShantySystem.Properties.Resources.resources
+C:\Users\diego\source\repos\ShantySystem\obj\Debug\ShantySystem.csproj.GenerateResource.cache
+C:\Users\diego\source\repos\ShantySystem\obj\Debug\ShantySystem.csproj.CoreCompileInputs.cache
+C:\Users\diego\source\repos\ShantySystem\bin\Debug\ShantySystem.exe.config
+C:\Users\diego\source\repos\ShantySystem\bin\Debug\ShantySystem.exe
+C:\Users\diego\source\repos\ShantySystem\bin\Debug\ShantySystem.pdb
+C:\Users\diego\source\repos\ShantySystem\obj\Debug\ShantySystem.exe
+C:\Users\diego\source\repos\ShantySystem\obj\Debug\ShantySystem.pdb
