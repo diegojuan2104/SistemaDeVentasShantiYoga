@@ -8,3 +8,13 @@ C:\Users\diego\source\repos\ShantySystem\bin\Debug\ShantySystem.exe
 C:\Users\diego\source\repos\ShantySystem\bin\Debug\ShantySystem.pdb
 C:\Users\diego\source\repos\ShantySystem\obj\Debug\ShantySystem.exe
 C:\Users\diego\source\repos\ShantySystem\obj\Debug\ShantySystem.pdb
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\bin\Debug\ShantySystem.exe.config
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\bin\Debug\ShantySystem.exe
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\bin\Debug\ShantySystem.pdb
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.csprojAssemblyReference.cache
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Pagina_Inicial.resources
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Properties.Resources.resources
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.csproj.GenerateResource.cache
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.csproj.CoreCompileInputs.cache
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.exe
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.pdb
