@@ -16,5 +16,12 @@ namespace ShantySystem
         {
             InitializeComponent();
         }
+
+        private void Form_Ingresos_Load(object sender, EventArgs e)
+        {
+            Conexion conexion = new Conexion();
+
+            conexion.actualizarDataGrid(this.dataGridView1,"SELECT * FROM CLIENTE");
+        }
     }
 }

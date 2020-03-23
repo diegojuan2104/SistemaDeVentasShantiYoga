@@ -54,6 +54,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Ingresos";
             this.Text = "Form_Ingresos";
+            this.Load += new System.EventHandler(this.Form_Ingresos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bdShantiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdShantiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
     <Compile Include="Form_Ingresos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bdShantiDataSet.xsc">
+      <DependentUpon>bdShantiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bdShantiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdShantiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdShantiDataSet.xss">
+      <DependentUpon>bdShantiDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

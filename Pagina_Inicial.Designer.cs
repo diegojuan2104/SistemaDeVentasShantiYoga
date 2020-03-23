@@ -46,7 +46,7 @@
             this.btnProductosLista = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.panelVentas = new System.Windows.Forms.Panel();
-            this.btnProveedores = new System.Windows.Forms.Button();
+            this.btnProveedoresList = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnIngresos = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
@@ -333,7 +333,7 @@
             // panelVentas
             // 
             this.panelVentas.BackColor = System.Drawing.Color.White;
-            this.panelVentas.Controls.Add(this.btnProveedores);
+            this.panelVentas.Controls.Add(this.btnProveedoresList);
             this.panelVentas.Controls.Add(this.button2);
             this.panelVentas.Controls.Add(this.btnIngresos);
             this.panelVentas.Dock = System.Windows.Forms.DockStyle.Top;
@@ -342,21 +342,21 @@
             this.panelVentas.Size = new System.Drawing.Size(245, 124);
             this.panelVentas.TabIndex = 2;
             // 
-            // btnProveedores
+            // btnProveedoresList
             // 
-            this.btnProveedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProveedores.FlatAppearance.BorderSize = 0;
-            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProveedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(21)))), ((int)(((byte)(73)))));
-            this.btnProveedores.Location = new System.Drawing.Point(0, 79);
-            this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnProveedores.Size = new System.Drawing.Size(245, 45);
-            this.btnProveedores.TabIndex = 4;
-            this.btnProveedores.Text = "Proveedores BD";
-            this.btnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProveedores.UseVisualStyleBackColor = true;
-            this.btnProveedores.Click += new System.EventHandler(this.button3_Click);
+            this.btnProveedoresList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProveedoresList.FlatAppearance.BorderSize = 0;
+            this.btnProveedoresList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedoresList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(21)))), ((int)(((byte)(73)))));
+            this.btnProveedoresList.Location = new System.Drawing.Point(0, 79);
+            this.btnProveedoresList.Name = "btnProveedoresList";
+            this.btnProveedoresList.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnProveedoresList.Size = new System.Drawing.Size(245, 45);
+            this.btnProveedoresList.TabIndex = 4;
+            this.btnProveedoresList.Text = "Listado de Proveedores";
+            this.btnProveedoresList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProveedoresList.UseVisualStyleBackColor = true;
+            this.btnProveedoresList.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -484,7 +484,7 @@
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Button btnProductosLista;
         private System.Windows.Forms.Button btnProductos;
-        private System.Windows.Forms.Button btnProveedores;
+        private System.Windows.Forms.Button btnProveedoresList;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnProductosEO;
         private System.Windows.Forms.Panel panelContenedor;
