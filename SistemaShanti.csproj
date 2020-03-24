@@ -52,6 +52,19 @@
       <DependentUpon>bdShantiDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="ConfiguracionDataGrid.cs" />
+    <Compile Include="Form_AgregarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AgregarCliente.Designer.cs">
+      <DependentUpon>Form_AgregarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Clientes.Designer.cs">
+      <DependentUpon>Form_Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Ingresos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +79,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_AgregarCliente.resx">
+      <DependentUpon>Form_AgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Clientes.resx">
+      <DependentUpon>Form_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Ingresos.resx">
       <DependentUpon>Form_Ingresos.cs</DependentUpon>
     </EmbeddedResource>

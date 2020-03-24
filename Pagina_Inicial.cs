@@ -23,6 +23,7 @@ namespace ShantySystem
         //Constructor
         private void Pagina_Inicial_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
 
         }
 
@@ -107,7 +108,7 @@ namespace ShantySystem
         //btn listado de clientes
         private void btnClientesBD_Click(object sender, EventArgs e)
         {
-
+            abrirformContenido(new Form_Clientes());
         }
 
 

@@ -431,9 +431,10 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.White;
-            this.panelContenedor.Location = new System.Drawing.Point(272, 0);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(266, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(839, 755);
+            this.panelContenedor.Size = new System.Drawing.Size(847, 755);
             this.panelContenedor.TabIndex = 0;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
@@ -442,6 +443,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1113, 755);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelPrincipal);
@@ -449,7 +451,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(21)))), ((int)(((byte)(73)))));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Pagina_Inicial";
-            this.Text = "Pagina_Inicial";
+            this.Text = "Sistema de ventas Shanti Yoga Rebel";
             this.Load += new System.EventHandler(this.Pagina_Inicial_Load);
             this.panelPrincipal.ResumeLayout(false);
             this.panelEstadisticas.ResumeLayout(false);

@@ -9,3 +9,5 @@ C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\Si
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\SistemaShanti.csproj.CoreCompileInputs.cache
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.exe
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.pdb
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_Clientes.resources
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_AgregarCliente.resources
