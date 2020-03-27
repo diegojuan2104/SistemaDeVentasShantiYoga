@@ -39,9 +39,7 @@ namespace ShantySystem
 
         private void btnAgregarCliente_Click(object sender, EventArgs e)
         {
-            Form_AgregarCliente form_AgregarCliente = new Form_AgregarCliente();
-
-            form_AgregarCliente.ShowDialog();
+            Pagina_Inicial.form_AgregarCliente.ShowDialog();
         }
     }
 }

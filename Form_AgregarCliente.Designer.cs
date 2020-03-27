@@ -87,7 +87,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(119, 24);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(307, 39);
+            this.label5.Size = new System.Drawing.Size(294, 38);
             this.label5.TabIndex = 4;
             this.label5.Text = "Registro de Cliente";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -196,6 +196,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form_AgregarCliente";
             this.Text = "Form_AgregarCliente";
+            this.Load += new System.EventHandler(this.Form_AgregarCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

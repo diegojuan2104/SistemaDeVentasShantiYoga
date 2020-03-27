@@ -12,6 +12,13 @@ namespace ShantySystem
 {
     public partial class Pagina_Inicial : Form
     {
+
+        public static Form_Ingresos form_Ingresos;
+        public static Form_Clientes form_clientes;
+
+        public static Form_AgregarCliente form_AgregarCliente = new Form_AgregarCliente();
+        
+
         public Pagina_Inicial()
         {
             InitializeComponent();
@@ -81,6 +88,7 @@ namespace ShantySystem
         private void btnPClientes_Click(object sender, EventArgs e)
         {
             mostrarSubMenu(panelClientes);
+            AddOwnedForm(form_AgregarCliente);
         }
 
 
@@ -109,6 +117,7 @@ namespace ShantySystem
         private void btnClientesBD_Click(object sender, EventArgs e)
         {
             abrirformContenido(new Form_Clientes());
+            
         }
 
 
@@ -133,6 +142,7 @@ namespace ShantySystem
         //btnIngresos
         private void btnIngresos_Click(object sender, EventArgs e)
         {
+            
             abrirformContenido(new Form_Ingresos());
 
         }
@@ -193,7 +203,7 @@ namespace ShantySystem
         private Form formActivo = null;
 
         // Abre el contenido del panel interno
-        private void abrirformContenido(Form formContenido) {
+        public void abrirformContenido(Form formContenido) {
             if (formActivo != null) formActivo.Close();
 
             formActivo = formContenido;

@@ -12,18 +12,26 @@ namespace ShantySystem
 {
     public partial class Form_AgregarCliente : Form
     {
-
         Conexion conexion;
+
         public Form_AgregarCliente()
         {
             InitializeComponent();
         }
 
+        private void Form_AgregarCliente_Load(object sender, EventArgs e)
+        {
+            conexion = new Conexion();
+        }
+
+        //Evento de sólo números
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
+
+        //Método de validación de email
         public bool isValidEmail(string email)
         {
             try
@@ -41,36 +49,31 @@ namespace ShantySystem
         private void btnAgregarCliente_Click(object sender, EventArgs e)
         {
 
-            if (txtNombre.Text != "" && txtApellido.Text != "" && txtTelefono.Text != "")
-            {
 
-                bool emailValidation = (txtEmail.Text != "" && isValidEmail(txtEmail.Text));
-                conexion = new Conexion();
-                conexion.conectar();
+            //Validación email (El email no es obligatorio)
+            if (txtEmail.Text != "") if (!(isValidEmail(txtEmail.Text))) { MessageBox.Show("Email invalido"); return; }
 
-                if (emailValidation)
-                {
-                    return;
-                }
-                else
-                {
-                    MessageBox.Show("Email insertado es invalido");
-                }
-                string consulta = "INSERT INTO Cliente (nombres,apellidos,celular,correo,direccion) values ('" + txtNombre.Text.ToUpper() + "','" + txtApellido.Text.ToUpper() + "'," + txtTelefono.Text + ",'" + txtEmail.Text + "','" + txtDireccion.Text + "')";
+            //Validación de campos obligatorios
+            if (txtNombre.Text == "" || txtApellido.Text == "" || txtTelefono.Text == "") { MessageBox.Show("Todos los campos señalados con '*' son obligatorios "); return; }
 
 
-                    conexion.ejecutarSql(consulta);
+            string consulta = "INSERT INTO Cliente (nombres,apellidos,celular,correo,direccion) values ('" + txtNombre.Text.ToUpper() + "','" + txtApellido.Text.ToUpper() + "'," + txtTelefono.Text + ",'" + txtEmail.Text + "','" + txtDireccion.Text.ToUpper() + "')";
 
-                    conexion.desconectar();
+            conexion.conectar();
+            conexion.ejecutarSql(consulta);
+            conexion.desconectar();
 
-                
-            
-            }
-            else {
-                MessageBox.Show("Todos los campos señalados con '*' son obligatorios ");
-            }
+            //Recargar página de clientes
+            Pagina_Inicial pagina_Inicial = Owner as Pagina_Inicial;
+            pagina_Inicial.abrirformContenido(new Form_Clientes());
 
-           // conexion.actualizarDataGrid(this.dataGridViewCliente, "SELECT * FROM CLIENTE");
+            limpiarCampos();
+            Close();
         }
+
+
+        public void limpiarCampos() {
+            txtNombre.Clear();txtApellido.Clear();txtTelefono.Clear();txtEmail.Clear();txtDireccion.Clear();
+           }
     }
 }
