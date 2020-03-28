@@ -28,11 +28,10 @@ namespace ShantySystem
 
             if (informacion > 0)
             {
-
-                MessageBox.Show("Ok");
+                MessageBox.Show("Operación exitosa");
             }
             else {
-                MessageBox.Show("Fail");
+                MessageBox.Show("Hubo un error en la operación");
             }
         }
 
@@ -43,6 +42,7 @@ namespace ShantySystem
             SqlDataAdapter dataAdapter = new SqlDataAdapter(consulta,connect);
 
             dataAdapter.Fill(dataSet, "Cliente");
+
 
             dataGridView.DataSource = dataSet;
             dataGridView.DataMember = "Cliente";

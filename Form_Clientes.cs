@@ -13,6 +13,10 @@ namespace ShantySystem
 {
     public partial class Form_Clientes : Form
     {
+
+        public static string id,nombres,apellidos,celular,direccion,correo;
+      
+
         public Form_Clientes()
         {
             InitializeComponent();
@@ -57,7 +61,14 @@ namespace ShantySystem
             {
                 DataGridViewRow registro = dataGridViewClientes.Rows[e.RowIndex];
 
-                MessageBox.Show(registro.Cells["nombres"].Value.ToString());
+                id = registro.Cells["idCliente"].Value.ToString();
+                nombres = registro.Cells["nombres"].Value.ToString();
+                apellidos = registro.Cells["apellidos"].Value.ToString();
+                celular = registro.Cells["celular"].Value.ToString();
+                correo = registro.Cells["correo"].Value.ToString();
+                direccion = registro.Cells["direccion"].Value.ToString();
+
+                Pagina_Inicial.form_InformacionCliente.ShowDialog();
             }
 
         }

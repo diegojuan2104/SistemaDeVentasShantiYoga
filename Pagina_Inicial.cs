@@ -13,16 +13,17 @@ namespace ShantySystem
     public partial class Pagina_Inicial : Form
     {
 
-        public static Form_Ingresos form_Ingresos;
-        public static Form_Clientes form_clientes;
 
-        public static Form_AgregarCliente form_AgregarCliente = new Form_AgregarCliente();
-        
+        public static Form_AgregarCliente form_AgregarCliente;
+        public static Form_InformacionCliente form_InformacionCliente;
+
 
         public Pagina_Inicial()
         {
             InitializeComponent();
             estadoInicialSubmenus();
+            form_AgregarCliente = new Form_AgregarCliente();
+            form_InformacionCliente = new Form_InformacionCliente();
         }
 
 
@@ -89,6 +90,7 @@ namespace ShantySystem
         {
             mostrarSubMenu(panelClientes);
             AddOwnedForm(form_AgregarCliente);
+            AddOwnedForm(form_InformacionCliente);
         }
 
 

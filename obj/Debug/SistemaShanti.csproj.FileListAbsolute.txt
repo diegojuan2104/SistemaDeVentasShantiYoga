@@ -11,3 +11,4 @@ C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\Sh
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_Clientes.resources
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_Ingresos.resources
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Pagina_Inicial.resources
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_InformacionCliente.resources
