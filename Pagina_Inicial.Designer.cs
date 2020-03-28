@@ -483,12 +483,12 @@
         private System.Windows.Forms.Panel panelVentas;
         private System.Windows.Forms.Button btnIngresos;
         private System.Windows.Forms.Button btnVentas;
-        private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Button btnProductosLista;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnProveedoresList;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnProductosEO;
+        private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

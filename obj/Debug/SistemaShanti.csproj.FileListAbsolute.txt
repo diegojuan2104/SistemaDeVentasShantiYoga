@@ -1,13 +1,13 @@
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\bin\Debug\ShantySystem.exe.config
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\bin\Debug\ShantySystem.exe
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\bin\Debug\ShantySystem.pdb
-C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\SistemaShanti.csprojAssemblyReference.cache
-C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_Ingresos.resources
-C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Pagina_Inicial.resources
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Properties.Resources.resources
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\SistemaShanti.csproj.GenerateResource.cache
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\SistemaShanti.csproj.CoreCompileInputs.cache
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.exe
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.pdb
-C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_Clientes.resources
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\SistemaShanti.csprojAssemblyReference.cache
 C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_AgregarCliente.resources
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_Clientes.resources
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_Ingresos.resources
+C:\Users\diego\OneDrive\Escritorio\Shanti\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Pagina_Inicial.resources

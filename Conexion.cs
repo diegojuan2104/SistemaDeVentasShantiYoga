@@ -48,8 +48,6 @@ namespace ShantySystem
             dataGridView.DataMember = "Cliente";
 
             this.desconectar();
-        
-        
         }
     }
 }
