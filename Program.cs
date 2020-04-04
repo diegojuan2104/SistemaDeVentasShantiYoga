@@ -16,7 +16,7 @@ namespace ShantySystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_AInicial());
+            Application.Run(new Pagina_Inicial());
         }
     }
 }

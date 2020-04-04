@@ -20,7 +20,6 @@ namespace ShantySystem
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.Columns[0].Width = 60;
             dataGridView1.RowTemplate.Height = 40;
-            dataGridView1.Size = new Size(1100,580);
 
         }
     }

@@ -10,26 +10,20 @@ using System.Windows.Forms;
 
 namespace ShantySystem
 {
-    public partial class Form_AInicial : Form
+    public partial class Pagina_Inicial : Form
     {
 
 
-        public static Form_ClienteAgregar form_AgregarCliente;
-        public static Form_ClienteInformacion form_InformacionCliente;
-        public static Form_ProveedorAgregar form_ProveedorAgregar;
+        public static Form_AgregarCliente form_AgregarCliente;
+        public static Form_InformacionCliente form_InformacionCliente;
 
 
-        public Form_AInicial()
+        public Pagina_Inicial()
         {
             InitializeComponent();
             estadoInicialSubmenus();
-            form_AgregarCliente = new Form_ClienteAgregar();
-            form_InformacionCliente = new Form_ClienteInformacion();
-            form_ProveedorAgregar = new Form_ProveedorAgregar();
-
-            AddOwnedForm(form_AgregarCliente);
-            AddOwnedForm(form_InformacionCliente);
-            AddOwnedForm(form_ProveedorAgregar);
+            form_AgregarCliente = new Form_AgregarCliente();
+            form_InformacionCliente = new Form_InformacionCliente();
         }
 
 
@@ -37,7 +31,7 @@ namespace ShantySystem
         //Constructor
         private void Pagina_Inicial_Load(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
 
         }
 
@@ -61,7 +55,7 @@ namespace ShantySystem
         //btn Proveedores BD
         private void button3_Click(object sender, EventArgs e)
         {
-            abrirformContenido(new Form_Proveedor());
+
         }
 
         //btn Productos
@@ -95,7 +89,8 @@ namespace ShantySystem
         private void btnPClientes_Click(object sender, EventArgs e)
         {
             mostrarSubMenu(panelClientes);
-
+            AddOwnedForm(form_AgregarCliente);
+            AddOwnedForm(form_InformacionCliente);
         }
 
 
@@ -123,7 +118,7 @@ namespace ShantySystem
         //btn listado de clientes
         private void btnClientesBD_Click(object sender, EventArgs e)
         {
-            abrirformContenido(new Form_Cliente());
+            abrirformContenido(new Form_Clientes());
             
         }
 

@@ -13,7 +13,7 @@ namespace ShantySystem
         SqlConnection connect;
 
         public void conectar() {
-            connect = new SqlConnection("Data Source=DESKTOP-D7ETEFD;Initial Catalog=dbshanti;Integrated Security=True");
+            connect = new SqlConnection("Data Source=DESKTOP-F1MGRLV;Initial Catalog=bdShanti;Integrated Security=True");
             connect.Open();
         }
 
@@ -22,36 +22,32 @@ namespace ShantySystem
         }
 
         public void ejecutarSql(string consulta) {
+            SqlCommand comando = new SqlCommand(consulta,connect);
 
-            try
+            int informacion = comando.ExecuteNonQuery();
+
+            if (informacion > 0)
             {
-                SqlCommand comando = new SqlCommand(consulta, connect);
-                comando.ExecuteNonQuery();
+                MessageBox.Show("Operación exitosa");
             }
-            catch (Exception e) {
-                MessageBox.Show("Error en la base de datos: " + e);
+            else {
+                MessageBox.Show("Hubo un error en la operación");
             }
         }
 
         public void actualizarDataGrid(DataGridView dataGridView, string consulta) {
-            try
-            {
-                conectar();
+            this.conectar();
 
-                System.Data.DataSet dataSet = new System.Data.DataSet();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(consulta, connect);
+            System.Data.DataSet dataSet = new System.Data.DataSet();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(consulta,connect);
 
-                dataAdapter.Fill(dataSet, "Cliente");
+            dataAdapter.Fill(dataSet, "Cliente");
 
 
-                dataGridView.DataSource = dataSet;
-                dataGridView.DataMember = "Cliente";
+            dataGridView.DataSource = dataSet;
+            dataGridView.DataMember = "Cliente";
 
-                desconectar();
-            }
-            catch (Exception e) {
-                MessageBox.Show("Error en la base de datos: "+e);
-            }
+            this.desconectar();
         }
     }
 }
