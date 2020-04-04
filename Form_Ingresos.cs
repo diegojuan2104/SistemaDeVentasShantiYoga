@@ -19,13 +19,7 @@ namespace ShantySystem
 
         private void Form_Ingresos_Load(object sender, EventArgs e)
         {
-            ConfiguracionDataGrid configuracionDataGrid = new ConfiguracionDataGrid();
-
-            configuracionDataGrid.configurarDataGrid(dataGridViewIngresos);
-           
-            Conexion conexion = new Conexion();
-
-            conexion.actualizarDataGrid(this.dataGridViewIngresos,"SELECT * FROM CLIENTE");
+          
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

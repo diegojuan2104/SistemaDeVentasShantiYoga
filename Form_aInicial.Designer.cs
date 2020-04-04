@@ -1,6 +1,6 @@
 ﻿namespace ShantySystem
 {
-    partial class Pagina_Inicial
+    partial class Form_AInicial
     {
         /// <summary>
         /// Required designer variable.
