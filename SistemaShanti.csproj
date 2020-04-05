@@ -46,30 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bdShantiDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bdShantiDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="ConfiguracionDataGrid.cs" />
-    <Compile Include="Form_AgregarCliente.cs">
+    <Compile Include="dbshantiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbshantiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ClienteAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_AgregarCliente.Designer.cs">
-      <DependentUpon>Form_AgregarCliente.cs</DependentUpon>
+    <Compile Include="Form_ClienteAgregar.Designer.cs">
+      <DependentUpon>Form_ClienteAgregar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Clientes.cs">
+    <Compile Include="Form_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Clientes.Designer.cs">
-      <DependentUpon>Form_Clientes.cs</DependentUpon>
+    <Compile Include="Form_Cliente.Designer.cs">
+      <DependentUpon>Form_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_InformacionCliente.cs">
+    <Compile Include="Form_ClienteInformacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_InformacionCliente.Designer.cs">
-      <DependentUpon>Form_InformacionCliente.cs</DependentUpon>
+    <Compile Include="Form_ClienteInformacion.Designer.cs">
+      <DependentUpon>Form_ClienteInformacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Ingresos.cs">
       <SubType>Form</SubType>
@@ -77,44 +77,62 @@
     <Compile Include="Form_Ingresos.Designer.cs">
       <DependentUpon>Form_Ingresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pagina_Inicial.cs">
+    <Compile Include="Form_AInicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pagina_Inicial.Designer.cs">
-      <DependentUpon>Pagina_Inicial.cs</DependentUpon>
+    <Compile Include="Form_AInicial.Designer.cs">
+      <DependentUpon>Form_AInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ProveedorAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ProveedorAgregar.Designer.cs">
+      <DependentUpon>Form_ProveedorAgregar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form_AgregarCliente.resx">
-      <DependentUpon>Form_AgregarCliente.cs</DependentUpon>
+    <Compile Include="Form_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Proveedor.Designer.cs">
+      <DependentUpon>Form_Proveedor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form_ClienteAgregar.resx">
+      <DependentUpon>Form_ClienteAgregar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Clientes.resx">
-      <DependentUpon>Form_Clientes.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Cliente.resx">
+      <DependentUpon>Form_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_InformacionCliente.resx">
-      <DependentUpon>Form_InformacionCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ClienteInformacion.resx">
+      <DependentUpon>Form_ClienteInformacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Ingresos.resx">
       <DependentUpon>Form_Ingresos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pagina_Inicial.resx">
-      <DependentUpon>Pagina_Inicial.cs</DependentUpon>
+    <EmbeddedResource Include="Form_AInicial.resx">
+      <DependentUpon>Form_AInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ProveedorAgregar.resx">
+      <DependentUpon>Form_ProveedorAgregar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="bdShantiDataSet.xsc">
-      <DependentUpon>bdShantiDataSet.xsd</DependentUpon>
+    <EmbeddedResource Include="Form_Proveedor.resx">
+      <DependentUpon>Form_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dbshantiDataSet.xsc">
+      <DependentUpon>dbshantiDataSet.xsd</DependentUpon>
     </None>
-    <None Include="bdShantiDataSet.xsd">
+    <None Include="dbshantiDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bdShantiDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>dbshantiDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="bdShantiDataSet.xss">
-      <DependentUpon>bdShantiDataSet.xsd</DependentUpon>
+    <None Include="dbshantiDataSet.xss">
+      <DependentUpon>dbshantiDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

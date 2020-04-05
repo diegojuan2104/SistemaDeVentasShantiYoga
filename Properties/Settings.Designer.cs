@@ -32,5 +32,15 @@ namespace ShantySystem.Properties {
                 return ((string)(this["bdShantiConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-D7ETEFD;Initial Catalog=dbshanti;Integrated Security=True")]
+        public string dbshantiConnectionString {
+            get {
+                return ((string)(this["dbshantiConnectionString"]));
+            }
+        }
     }
 }
