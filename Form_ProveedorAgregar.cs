@@ -12,16 +12,18 @@ namespace ShantySystem
 {
     public partial class Form_ProveedorAgregar : Form
     {
+
+        Configuracion configuracion;
         public Form_ProveedorAgregar()
         {
             InitializeComponent();
+            configuracion = new Configuracion();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Conexion conexion = new Conexion();
             
-
             //Validación de campos obligatorios
             if (txtNombre.Text == "" || txtTelefono.Text == "") { MessageBox.Show("Todos los campos señalados con '*' son obligatorios "); return; }
 
@@ -43,6 +45,16 @@ namespace ShantySystem
         public void limpiarCampos()
         {
             txtNombre.Clear(); txtTelefono.Clear(); 
+        }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Configuracion.soloNumeros(e);
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -50,7 +50,6 @@
             this.dataGridViewClientes.RowTemplate.Height = 24;
             this.dataGridViewClientes.Size = new System.Drawing.Size(743, 435);
             this.dataGridViewClientes.TabIndex = 1;
-            this.dataGridViewClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClientes_CellContentClick);
             this.dataGridViewClientes.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClientes_CellContentDoubleClick);
             // 
             // label2
@@ -64,7 +63,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Clientes";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnAgregarCliente
             // 

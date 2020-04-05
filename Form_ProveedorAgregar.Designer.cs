@@ -43,6 +43,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(202, 20);
             this.txtTelefono.TabIndex = 21;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtNombre
             // 
@@ -86,7 +87,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(142, 196);
+            this.btnAgregar.Location = new System.Drawing.Point(154, 191);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 27;
@@ -98,7 +99,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 248);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(392, 270);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtNombre);
@@ -106,6 +108,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Name = "Form_ProveedorAgregar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_ProveedorAgregar";
             this.ResumeLayout(false);
             this.PerformLayout();

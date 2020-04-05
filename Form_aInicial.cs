@@ -14,22 +14,28 @@ namespace ShantySystem
     {
 
 
-        public static Form_ClienteAgregar form_AgregarCliente;
-        public static Form_ClienteInformacion form_InformacionCliente;
+        public static Form_ClienteAgregar form_ClienteAgregar;
+        public static Form_ClienteInformacion form_ClienteInformacion;
         public static Form_ProveedorAgregar form_ProveedorAgregar;
+        public static Form_ProveedorInformacion form_ProveedorInformacion;
 
 
         public Form_AInicial()
         {
             InitializeComponent();
             estadoInicialSubmenus();
-            form_AgregarCliente = new Form_ClienteAgregar();
-            form_InformacionCliente = new Form_ClienteInformacion();
-            form_ProveedorAgregar = new Form_ProveedorAgregar();
+            abrirformContenido(new Form_Ingresos());
 
-            AddOwnedForm(form_AgregarCliente);
-            AddOwnedForm(form_InformacionCliente);
+            form_ClienteAgregar = new Form_ClienteAgregar();
+            form_ClienteInformacion = new Form_ClienteInformacion();
+            form_ProveedorAgregar = new Form_ProveedorAgregar();
+            form_ProveedorInformacion = new Form_ProveedorInformacion();
+
+            AddOwnedForm(form_ClienteAgregar);
+            AddOwnedForm(form_ClienteInformacion);
             AddOwnedForm(form_ProveedorAgregar);
+            AddOwnedForm(form_ProveedorInformacion);
+
         }
 
 
@@ -59,10 +65,12 @@ namespace ShantySystem
         }
 
         //btn Proveedores BD
-        private void button3_Click(object sender, EventArgs e)
+
+        private void btnProveedoresList_Click(object sender, EventArgs e)
         {
             abrirformContenido(new Form_Proveedor());
         }
+
 
         //btn Productos
         private void button1_Click_1(object sender, EventArgs e)
@@ -227,5 +235,7 @@ namespace ShantySystem
         {
                 
         }
+
+
     }
 }

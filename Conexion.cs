@@ -27,6 +27,7 @@ namespace ShantySystem
             {
                 SqlCommand comando = new SqlCommand(consulta, connect);
                 comando.ExecuteNonQuery();
+                MessageBox.Show("Operación exitosa");
             }
             catch (Exception e) {
                 MessageBox.Show("Error en la base de datos: " + e);

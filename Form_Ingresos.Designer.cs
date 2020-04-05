@@ -39,11 +39,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewIngresos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewIngresos.Location = new System.Drawing.Point(33, 67);
+            this.dataGridViewIngresos.Location = new System.Drawing.Point(25, 54);
+            this.dataGridViewIngresos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewIngresos.Name = "dataGridViewIngresos";
             this.dataGridViewIngresos.RowHeadersWidth = 51;
             this.dataGridViewIngresos.RowTemplate.Height = 24;
-            this.dataGridViewIngresos.Size = new System.Drawing.Size(1279, 435);
+            this.dataGridViewIngresos.Size = new System.Drawing.Size(959, 353);
             this.dataGridViewIngresos.TabIndex = 0;
             this.dataGridViewIngresos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -51,9 +52,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Location = new System.Drawing.Point(9, 7);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 32);
+            this.label2.Size = new System.Drawing.Size(129, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "INGRESOS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -61,12 +63,14 @@
             // 
             // Form_Ingresos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1341, 718);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1006, 583);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridViewIngresos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_Ingresos";
             this.Text = "Form_Ingresos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -13,7 +13,6 @@ namespace ShantySystem
     public partial class Form_ClienteAgregar : Form
     {
         Conexion conexion;
-
         public Form_ClienteAgregar()
         {
             InitializeComponent();
@@ -27,7 +26,7 @@ namespace ShantySystem
         //Evento de sólo números
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+            Configuracion.soloNumeros(e);
         }
 
 

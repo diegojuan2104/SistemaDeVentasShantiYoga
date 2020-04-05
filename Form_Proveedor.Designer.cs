@@ -50,6 +50,7 @@
             this.dataGridViewProveedores.RowTemplate.Height = 24;
             this.dataGridViewProveedores.Size = new System.Drawing.Size(743, 344);
             this.dataGridViewProveedores.TabIndex = 2;
+            this.dataGridViewProveedores.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProveedores_CellContentDoubleClick);
             // 
             // panel2
             // 
@@ -68,6 +69,7 @@
             this.txtBuscador.Name = "txtBuscador";
             this.txtBuscador.Size = new System.Drawing.Size(286, 20);
             this.txtBuscador.TabIndex = 5;
+            this.txtBuscador.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscador_KeyUp);
             // 
             // label1
             // 
@@ -115,6 +117,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(812, 628);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);

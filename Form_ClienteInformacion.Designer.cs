@@ -72,9 +72,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(9, 52);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(317, 309);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
@@ -84,7 +84,7 @@
             // 
             this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(93, 39);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(202, 20);
             this.txtId.TabIndex = 62;
@@ -102,7 +102,7 @@
             // btnAgregarCliente
             // 
             this.btnAgregarCliente.Location = new System.Drawing.Point(145, 243);
-            this.btnAgregarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarCliente.Name = "btnAgregarCliente";
             this.btnAgregarCliente.Size = new System.Drawing.Size(74, 39);
             this.btnAgregarCliente.TabIndex = 60;
@@ -143,7 +143,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(93, 206);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(202, 20);
             this.txtDireccion.TabIndex = 56;
@@ -151,7 +151,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(93, 174);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(202, 20);
             this.txtEmail.TabIndex = 55;
@@ -159,15 +159,16 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(93, 147);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(202, 20);
             this.txtTelefono.TabIndex = 54;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(93, 112);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(202, 20);
             this.txtApellido.TabIndex = 53;
@@ -175,7 +176,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(93, 76);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(202, 20);
             this.txtNombre.TabIndex = 52;
@@ -246,18 +247,17 @@
             // btnDeudasPendientes
             // 
             this.btnDeudasPendientes.Location = new System.Drawing.Point(386, 95);
-            this.btnDeudasPendientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeudasPendientes.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeudasPendientes.Name = "btnDeudasPendientes";
             this.btnDeudasPendientes.Size = new System.Drawing.Size(122, 28);
             this.btnDeudasPendientes.TabIndex = 32;
             this.btnDeudasPendientes.Text = "Deudas Pendientes";
             this.btnDeudasPendientes.UseVisualStyleBackColor = true;
-            this.btnDeudasPendientes.Click += new System.EventHandler(this.button1_Click);
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(386, 52);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 28);
             this.button1.TabIndex = 33;
@@ -267,7 +267,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(386, 140);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 28);
             this.button2.TabIndex = 34;
@@ -278,7 +278,7 @@
             // 
             this.btnEliminarCliente.BackColor = System.Drawing.Color.Red;
             this.btnEliminarCliente.Location = new System.Drawing.Point(444, 388);
-            this.btnEliminarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarCliente.Name = "btnEliminarCliente";
             this.btnEliminarCliente.Size = new System.Drawing.Size(122, 28);
             this.btnEliminarCliente.TabIndex = 35;
@@ -286,10 +286,11 @@
             this.btnEliminarCliente.UseVisualStyleBackColor = false;
             this.btnEliminarCliente.Click += new System.EventHandler(this.btnEliminarCliente_Click);
             // 
-            // Form_InformacionCliente
+            // Form_ClienteInformacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(575, 425);
             this.Controls.Add(this.btnEliminarCliente);
             this.Controls.Add(this.button2);
@@ -297,8 +298,8 @@
             this.Controls.Add(this.btnDeudasPendientes);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Form_InformacionCliente";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Form_ClienteInformacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_InformacionCliente";
             this.Load += new System.EventHandler(this.Form_InformacionCliente_Load);
@@ -314,24 +315,24 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnDeudasPendientes;
+        private System.Windows.Forms.Button btnAgregarCliente;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEliminarCliente;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnAgregarCliente;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnEliminarCliente;
     }
 }

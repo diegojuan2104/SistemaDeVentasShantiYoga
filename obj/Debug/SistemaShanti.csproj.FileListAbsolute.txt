@@ -28,3 +28,4 @@ C:\Users\Angela\Source\Repos\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Fo
 C:\Users\Angela\Source\Repos\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_AInicial.resources
 C:\Users\Angela\Source\Repos\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_Proveedor.resources
 C:\Users\Angela\Source\Repos\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_ProveedorAgregar.resources
+C:\Users\Angela\Source\Repos\SistemaDeVentasShantiYoga\obj\Debug\ShantySystem.Form_ProveedorInformacion.resources

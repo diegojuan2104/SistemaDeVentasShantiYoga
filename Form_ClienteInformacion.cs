@@ -12,6 +12,8 @@ namespace ShantySystem
 {
     public partial class Form_ClienteInformacion : Form
     {
+        Configuracion configuracion;
+        Conexion conexion;
         public Form_ClienteInformacion()
         {
             InitializeComponent();
@@ -20,7 +22,9 @@ namespace ShantySystem
         private void Form_InformacionCliente_Load(object sender, EventArgs e)
         {
             // Se carga toda la información del cliente seleccionado
-          
+
+            configuracion = new Configuracion();
+            conexion = new Conexion();
 
             txtId.Text = Form_Cliente.id.Trim();
             txtNombre.Text = Form_Cliente.nombres.Trim();
@@ -30,25 +34,15 @@ namespace ShantySystem
             txtDireccion.Text = Form_Cliente.direccion.Trim();
         }
 
-        private void btnAgregarCliente_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAgregarCliente_Click_1(object sender, EventArgs e)
         {
             //Validación email (El email no es obligatorio)
-            if (!string.IsNullOrEmpty(txtEmail.Text.Trim())) { if (!(isValidEmail(txtEmail.Text.Trim()))) { MessageBox.Show("Email invalido:" + txtEmail.Text); return; } }
+            if (!string.IsNullOrEmpty(txtEmail.Text.Trim())) { if (!(Configuracion.isValidEmail(txtEmail.Text.Trim()))) { MessageBox.Show("Email invalido:" + txtEmail.Text); return; } }
 
             //Validación de campos obligatorios
             if (txtNombre.Text == "" || txtApellido.Text == "" || txtTelefono.Text == "") { MessageBox.Show("Todos los campos señalados con '*' son obligatorios "); return; }
 
-            Conexion conexion = new Conexion();
+            
             conexion.conectar();
 
             string consulta = "UPDATE Cliente SET nombres='" + txtNombre.Text.ToUpper().Trim() + "',apellidos='" + txtApellido.Text.ToUpper().Trim() + "',celular=" + txtTelefono.Text.Trim() + ",correo='" + txtEmail.Text.Trim() + "',direccion='" + txtDireccion.Text.ToUpper().Trim() + "'  WHERE idCliente =" + txtId.Text.Trim();
@@ -63,7 +57,7 @@ namespace ShantySystem
 
         private void btnEliminarCliente_Click(object sender, EventArgs e)
         {
-            Conexion conexion = new Conexion();
+            if (!Configuracion.confirmacion()) return;
             conexion.conectar();
 
             string consulta = "DELETE FROM Cliente WHERE idCliente =" + txtId.Text;
@@ -80,16 +74,15 @@ namespace ShantySystem
 
         //Método de validación de email
 
-        public static bool isValidEmail(string email)
-        {
-            System.Text.RegularExpressions.Regex emailRegex = new System.Text.RegularExpressions.Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-            System.Text.RegularExpressions.Match emailMatch = emailRegex.Match(email);
-            return emailMatch.Success;
-        }
 
         private void txtNombre_MouseClick(object sender, MouseEventArgs e)
         {
             txtNombre.SelectionStart = txtNombre.Text.Length;
+        }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Configuracion.soloNumeros(e);
         }
     }
 }
