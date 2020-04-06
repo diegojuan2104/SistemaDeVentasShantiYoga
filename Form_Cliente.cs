@@ -28,7 +28,7 @@ namespace ShantySystem
             conexion = new Conexion();
             conexion.conectar();
 
-            conexion.actualizarDataGrid(dataGridViewClientes, "SELECT idCliente AS id,nombres AS Nombres,apellidos AS Apellidos,celular AS Celular,correo AS Correo,direccion AS Dirección FROM CLIENTE");
+            conexion.cargarDataGrid(dataGridViewClientes, "SELECT idCliente AS id,nombres AS Nombres,apellidos AS Apellidos,celular AS Celular,correo AS Correo,direccion AS Dirección FROM CLIENTE");
             conexion.desconectar();
 
             Configuracion.configurarDataGrid(dataGridViewClientes);
@@ -44,7 +44,7 @@ namespace ShantySystem
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
             conexion.conectar();
-            conexion.actualizarDataGrid(dataGridViewClientes, "SELECT idCliente AS id,nombres AS Nombres,apellidos AS Apellidos,celular AS Celular,correo AS Correo,direccion AS Dirección FROM Cliente where nombres like('" + txtBuscador.Text + "%') or apellidos like('" + txtBuscador.Text + "%') or idCliente like('" + txtBuscador.Text + "%')");
+            conexion.cargarDataGrid(dataGridViewClientes, "SELECT idCliente AS id,nombres AS Nombres,apellidos AS Apellidos,celular AS Celular,correo AS Correo,direccion AS Dirección FROM Cliente where nombres like('" + txtBuscador.Text + "%') or apellidos like('" + txtBuscador.Text + "%') or idCliente like('" + txtBuscador.Text + "%')");
             conexion.desconectar();
         }
 

@@ -10,22 +10,23 @@ namespace ShantySystem
 {
     class Conexion
     {
-        SqlConnection connect;
+        SqlConnection conexion;
+        SqlCommand comando;
 
         public void conectar() {
-            connect = new SqlConnection("Data Source=DESKTOP-D7ETEFD;Initial Catalog=dbshanti;Integrated Security=True");
-            connect.Open();
+            conexion = new SqlConnection("Data Source=DESKTOP-D7ETEFD;Initial Catalog=dbshanti;Integrated Security=True");
+            conexion.Open();
         }
 
         public void desconectar() {
-            connect.Close();
+            conexion.Close();
         }
 
         public void ejecutarSql(string consulta) {
 
             try
             {
-                SqlCommand comando = new SqlCommand(consulta, connect);
+                 comando = new SqlCommand(consulta, conexion);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Operación exitosa");
             }
@@ -34,13 +35,13 @@ namespace ShantySystem
             }
         }
 
-        public void actualizarDataGrid(DataGridView dataGridView, string consulta) {
+        public void cargarDataGrid(DataGridView dataGridView, string consulta) {
             try
             {
                 conectar();
 
                 System.Data.DataSet dataSet = new System.Data.DataSet();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(consulta, connect);
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(consulta, conexion);
 
                 dataAdapter.Fill(dataSet, "Cliente");
 
@@ -52,6 +53,49 @@ namespace ShantySystem
             }
             catch (Exception e) {
                 MessageBox.Show("Error en la base de datos: "+e);
+            }
+        }
+
+        public void cargarComboBox(ComboBox comboBox,String consulta,String campo) {
+            try
+            {
+                conectar();
+                comando = new SqlCommand(consulta, conexion);
+                SqlDataReader dataReader = comando.ExecuteReader();
+
+                while (dataReader.Read()) {
+                    comboBox.Items.Add(dataReader[campo].ToString());
+                }
+                desconectar();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error en la base de datos: " + e);
+            }
+
+        }
+
+        public List<String> listaDeUnCampo(String consulta, String campo) {
+            try
+            {
+                conectar();
+                comando = new SqlCommand(consulta, conexion);
+                SqlDataReader dataReader = comando.ExecuteReader();
+
+                List<String> list = new List<String>();
+
+                while (dataReader.Read())
+                {
+                    list.Add(dataReader[campo].ToString());
+                    Console.WriteLine(dataReader[campo].ToString());
+                }
+                desconectar();
+                return list;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error en la base de datos: " + e);
+                return null;
             }
         }
     }

@@ -19,7 +19,7 @@ namespace ShantySystem
             conexion = new Conexion();
             conexion.conectar();
 
-            conexion.actualizarDataGrid(dataGridViewProveedores, "SELECT idProveedor AS id,nombre AS Nombre,celular AS Celular FROM Proveedor");
+            conexion.cargarDataGrid(dataGridViewProveedores, "SELECT idProveedor AS id,nombre AS Nombre,celular AS Celular FROM Proveedor");
             conexion.desconectar();
 
             Configuracion.configurarDataGrid(dataGridViewProveedores);
@@ -49,7 +49,7 @@ namespace ShantySystem
         private void txtBuscador_KeyUp(object sender, KeyEventArgs e)
         {
             conexion.conectar();
-            conexion.actualizarDataGrid(dataGridViewProveedores, "SELECT idProveedor AS id,nombre AS Nombre,celular AS Celular FROM Proveedor where nombre like('" + txtBuscador.Text + "%') or celular like('" + txtBuscador.Text + "%') or idProveedor like('" + txtBuscador.Text + "%')");
+            conexion.cargarDataGrid(dataGridViewProveedores, "SELECT idProveedor AS id,nombre AS Nombre,celular AS Celular FROM Proveedor where nombre like('" + txtBuscador.Text + "%') or celular like('" + txtBuscador.Text + "%') or idProveedor like('" + txtBuscador.Text + "%')");
             conexion.desconectar();
         }
     }

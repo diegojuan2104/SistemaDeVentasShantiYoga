@@ -16,8 +16,12 @@ namespace ShantySystem
 
         public static Form_ClienteAgregar form_ClienteAgregar;
         public static Form_ClienteInformacion form_ClienteInformacion;
+       
         public static Form_ProveedorAgregar form_ProveedorAgregar;
         public static Form_ProveedorInformacion form_ProveedorInformacion;
+       
+        public static Form_ProductoAgregar form_ProductoAgregar;
+        public static Form_ProductoInformacion form_ProductoInformacion;
 
 
         public Form_AInicial()
@@ -28,14 +32,22 @@ namespace ShantySystem
 
             form_ClienteAgregar = new Form_ClienteAgregar();
             form_ClienteInformacion = new Form_ClienteInformacion();
+            
             form_ProveedorAgregar = new Form_ProveedorAgregar();
             form_ProveedorInformacion = new Form_ProveedorInformacion();
 
+            form_ProductoAgregar = new Form_ProductoAgregar();
+            form_ProductoInformacion = new Form_ProductoInformacion();
+            
+
             AddOwnedForm(form_ClienteAgregar);
             AddOwnedForm(form_ClienteInformacion);
+            
             AddOwnedForm(form_ProveedorAgregar);
             AddOwnedForm(form_ProveedorInformacion);
 
+            AddOwnedForm(form_ProductoAgregar);
+            AddOwnedForm(form_ProductoInformacion);
         }
 
 
@@ -82,7 +94,7 @@ namespace ShantySystem
         // btn Lista de productos
         private void btnProductosPV_Click(object sender, EventArgs e)
         {
-
+            abrirformContenido(new Form_Producto());
         }
 
 

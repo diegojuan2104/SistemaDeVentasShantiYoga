@@ -26,9 +26,16 @@ namespace ShantySystem
             
             //Validación de campos obligatorios
             if (txtNombre.Text == "" || txtTelefono.Text == "") { MessageBox.Show("Todos los campos señalados con '*' son obligatorios "); return; }
+            
+            //Validación de que no exita proveedor con ese nombre
+            List<String> listaProveedores = (conexion.listaDeUnCampo("SElECT nombre from Proveedor", "nombre"));
+            bool yaExiste =  listaProveedores.Any(str => str.Contains(txtNombre.Text.ToUpper().Trim()));
+            if (yaExiste) {MessageBox.Show("Ya existe un Proveedor con el nombre:  "+ txtNombre.Text.ToUpper()); return;}
 
 
             string consulta = "INSERT INTO Proveedor (nombre,celular) values ('" + txtNombre.Text.ToUpper().Trim() + "'," + txtTelefono.Text.Trim() + ")";
+
+
 
             conexion.conectar();
             conexion.ejecutarSql(consulta);
